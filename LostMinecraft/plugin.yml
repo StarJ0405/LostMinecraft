@@ -1,0 +1,32 @@
+name: LostMinecraft
+version: 1.19.3
+description: Made by StarJ
+main: com.StarJ.LM.Core
+api-version: 1.19
+
+commands:
+  MultiWorld:
+    description: "/mw goto [world]"
+    usage : "/mw goto [world]"
+    aliases: [multiworld,mw]
+  spawn:
+    description: "Entity 소환 명령어"
+    usage : "/spawn [type] <x> <y> <z> [0,1,2,3]\n0 : 전체 복사, 1: pitch0 위치 복사, 2 : 위치 복사, 3: 블럭 복사"
+    aliases: [s]
+    operator : admin
+  top:
+    description: "퍼미션을 주는 명령어"
+    usage : "/top [player] permission\n/tdeop [player] permission"
+    aliases: [top, detop]
+    operator : admin
+  test:
+    description: "for test"
+    usage : "/test"
+    aliases: [t]
+    operator : admin
+  
+permission:
+  skillTester:
+    description: "스킬 테스터용"
+  admin:
+    description: "랜덤 디펜스 관리를 위한 권한"
